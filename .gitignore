@@ -1,0 +1,8 @@
+.DS_Store
+*.zip
+.netlify/
+logo_basic.png
+assets/logo/icon.png
+assets/logo/logo.png
+assets/logo/text-logo.png
+assets/logo/logo-mark.svg
