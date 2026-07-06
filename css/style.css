@@ -812,6 +812,12 @@ a:hover {
   opacity: 0.75;
 }
 
+.footer__legal-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
 .footer__links {
   display: flex;
   flex-direction: column;
