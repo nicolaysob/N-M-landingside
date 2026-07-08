@@ -46,6 +46,7 @@
       <nav class="header__nav">
         <ul class="header__links">
           <li><a href="#tjenester">Tjenester</a></li>
+          <li><a href="#bilder">Bilder</a></li>
           <li><a href="#om-oss">Om oss</a></li>
           <li><a href="#omrade">Område</a></li>
           <li><a href="#kontakt" class="btn btn--small">Kontakt oss</a></li>
@@ -224,8 +225,64 @@
       </div>
     </section>
 
+    <!-- Bilder -->
+    <section class="section section--alt" id="bilder">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Bilder fra oppdrag</h2>
+          <p class="section__intro">Bilder fra oppdrag i borettslag, næring og uteområder. Dra slideren for å se før og etter.</p>
+        </div>
+
+        <div class="work">
+          <div class="work-gallery">
+            <figure class="work-card">
+              <div class="work-card__image">
+                <div class="compare" id="compare" aria-label="Før og etter sammenligning. Dra for å se forskjellen.">
+                  <img class="compare__before" src="assets/arbeid/foer-etter-before.jpg" alt="Før opprydding av heller" width="1200" height="800">
+                  <img class="compare__after" id="compare-after" src="assets/arbeid/foer-etter-after.jpg" alt="" width="1200" height="800" aria-hidden="true">
+                  <div class="compare__divider" id="compare-divider" aria-hidden="true">
+                    <div class="compare__handle">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="compare__label compare__label--before">Før</span>
+                  <span class="compare__label compare__label--after">Etter</span>
+                </div>
+              </div>
+              <figcaption class="work-card__caption">
+                <h3 class="work-card__title">Heller</h3>
+                <p class="work-card__text">Rehabilitering av belegningsstein med demontering, utbedring av pukk og presis legging for et jevnt og holdbart gangareal.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work-card">
+              <div class="work-card__image">
+                <img src="assets/arbeid/hekktrimming.jpg" alt="Hekktrimming ved borettslag" width="800" height="1067" loading="lazy">
+              </div>
+              <figcaption class="work-card__caption">
+                <h3 class="work-card__title">Hekk og vegetasjon</h3>
+                <p class="work-card__text">Løpende vedlikehold av hekker og grøntarealer for borettslag og sameier.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work-card">
+              <div class="work-card__image">
+                <img src="assets/arbeid/uteomrade-vedlikehold.jpg" alt="Vedlikehold av blomsterbed ved næringsbygg" width="800" height="1067" loading="lazy">
+              </div>
+              <figcaption class="work-card__caption">
+                <h3 class="work-card__title">Uteområder og næring</h3>
+                <p class="work-card__text">Ryddige utearealer for bedrifter og fellesarealer – hele sesongen.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Om oss -->
-    <section class="section section--alt" id="om-oss">
+    <section class="section" id="om-oss">
       <div class="container about">
         <div class="about__content">
           <h2 class="section__title">Om oss</h2>
