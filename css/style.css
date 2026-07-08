@@ -157,9 +157,10 @@ a:hover {
 }
 
 .header__logo-name {
-  font-size: 1.4rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
+  font-size: 1.25rem;
+  font-family: var(--font);
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
 .header__logo-tagline {
