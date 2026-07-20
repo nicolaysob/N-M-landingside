@@ -3,21 +3,32 @@ const header = document.querySelector('.header');
 const menuBtn = document.querySelector('.header__menu-btn');
 const navLinks = document.querySelectorAll('.header__links a, .header__phone');
 
+function setMenuOpen(isOpen) {
+  header.classList.toggle('header--open', isOpen);
+  menuBtn.setAttribute('aria-expanded', String(isOpen));
+  menuBtn.setAttribute('aria-label', isOpen ? 'Lukk meny' : 'Åpne meny');
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+
 menuBtn.addEventListener('click', () => {
-  const isOpen = header.classList.toggle('header--open');
-  menuBtn.setAttribute('aria-expanded', isOpen);
+  setMenuOpen(!header.classList.contains('header--open'));
 });
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    header.classList.remove('header--open');
-    menuBtn.setAttribute('aria-expanded', 'false');
-  });
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => setMenuOpen(false));
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') setMenuOpen(false);
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900) setMenuOpen(false);
 });
 
 // Header solidifies slightly when scrolling
 function updateHeaderScrollState() {
-  header.classList.toggle('header--scrolled', window.scrollY > 12);
+  header.classList.toggle('header--scrolled', window.scrollY > 40);
 }
 
 updateHeaderScrollState();
@@ -139,43 +150,6 @@ if (!prefersReducedMotion && 'IntersectionObserver' in window) {
   }, { threshold: 0.16, rootMargin: '0px 0px -40px 0px' });
 
   revealItems.forEach((item) => revealObserver.observe(item));
-}
-
-// Count-up stats in hero
-const statNodes = document.querySelectorAll('.hero-card__stat[data-count]');
-
-function animateCount(el) {
-  const target = Number(el.dataset.count);
-  const suffix = el.dataset.suffix || '';
-  const duration = 1100;
-  const start = performance.now();
-
-  function tick(now) {
-    const progress = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const value = Math.round(target * eased);
-    el.textContent = `${value}${suffix}`;
-    if (progress < 1) requestAnimationFrame(tick);
-  }
-
-  requestAnimationFrame(tick);
-}
-
-if (statNodes.length && 'IntersectionObserver' in window) {
-  const statsObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      if (prefersReducedMotion) {
-        const el = entry.target;
-        el.textContent = `${el.dataset.count}${el.dataset.suffix || ''}`;
-      } else {
-        animateCount(entry.target);
-      }
-      observer.unobserve(entry.target);
-    });
-  }, { threshold: 0.5 });
-
-  statNodes.forEach((node) => statsObserver.observe(node));
 }
 
 // Active nav link while scrolling sections
