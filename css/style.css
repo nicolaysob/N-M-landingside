@@ -233,7 +233,7 @@ a:hover {
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
   color: var(--white);
   flex-shrink: 0;
   animation: riseIn 0.55s ease both;
@@ -257,56 +257,52 @@ a:hover {
   color: var(--black);
 }
 
-.header__logo-mark {
-  width: 54px;
-  height: 54px;
+.header__logo-marks {
+  position: relative;
+  width: 150px;
+  height: 60px;
   flex-shrink: 0;
+}
+
+.header__logo-full {
+  width: 150px;
+  height: 60px;
   display: block;
   object-fit: contain;
-  object-position: center;
-  transform: translateY(-2px);
-  transition: transform 0.35s ease, filter 0.3s ease;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.28)) brightness(1.05);
+  object-position: left center;
+  transition: transform 0.35s ease, filter 0.3s ease, opacity 0.25s ease;
 }
 
-.header__logo:hover .header__logo-mark {
-  transform: translateY(-2px) scale(1.06) rotate(-3deg);
-}
-
-.header--scrolled .header__logo-mark,
-.header--solid .header__logo-mark,
-.header--open .header__logo-mark {
+.header__logo-mark--green {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
   filter: drop-shadow(0 4px 10px rgba(45, 106, 63, 0.18));
 }
 
-.header__logo-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 54px;
-  line-height: 1.1;
-  gap: 0.15rem;
+.header__logo-mark--white {
+  position: relative;
+  opacity: 1;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.28));
 }
 
-.header__logo-name {
-  font-size: 1.25rem;
-  font-family: var(--font);
-  font-weight: 700;
-  letter-spacing: -0.01em;
+.header__logo:hover .header__logo-full {
+  transform: scale(1.03);
 }
 
-.header__logo-tagline {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.78);
-  transition: color 0.25s ease;
+.header--scrolled .header__logo-mark--green,
+.header--solid .header__logo-mark--green,
+.header--open .header__logo-mark--green {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.header--scrolled .header__logo-tagline,
-.header--solid .header__logo-tagline,
-.header--open .header__logo-tagline {
-  color: var(--gray-500);
+.header--scrolled .header__logo-mark--white,
+.header--solid .header__logo-mark--white,
+.header--open .header__logo-mark--white {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .header__menu-btn {
@@ -1973,7 +1969,6 @@ a.contact__item:hover {
 .footer__logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
   color: var(--white);
   text-decoration: none;
   margin-bottom: 0.85rem;
@@ -1986,34 +1981,13 @@ a.contact__item:hover {
   transform: translateY(-1px);
 }
 
-.footer__logo-mark {
-  width: 52px;
-  height: 52px;
+.footer__logo-full {
+  width: 170px;
+  height: 68px;
   object-fit: contain;
-  flex-shrink: 0;
+  object-position: left center;
+  display: block;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
-}
-
-.footer__logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
-}
-
-.footer__logo-name {
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--white);
-  margin: 0;
-}
-
-.footer__logo-tagline {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.72);
-  margin: 0;
 }
 
 .footer__pitch {
