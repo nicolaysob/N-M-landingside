@@ -162,6 +162,7 @@ const menuSectionLinks = document.querySelectorAll('.header__links a:not(.btn)')
 function setActiveNav() {
   const marker = window.scrollY + header.offsetHeight + 24;
   let currentId = null;
+  const page = (window.location.pathname.split('/').pop() || 'index.html');
 
   sections.forEach((section) => {
     if (section.offsetTop <= marker) currentId = section.id;
@@ -170,7 +171,8 @@ function setActiveNav() {
   menuSectionLinks.forEach((link) => {
     const href = link.getAttribute('href') || '';
     const id = href.startsWith('#') ? href.slice(1) : '';
-    link.classList.toggle('is-active', id === currentId);
+    const isCurrentPage = href === page || href.endsWith('/' + page);
+    link.classList.toggle('is-active', id === currentId || isCurrentPage);
   });
 }
 
