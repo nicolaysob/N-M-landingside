@@ -73,19 +73,20 @@ if (form) {
   });
 }
 
-// Before/after compare slider
-const compare = document.getElementById('compare');
+// Before/after compare sliders
+document.querySelectorAll('.compare').forEach((compare) => {
+  const compareAfter = compare.querySelector('.compare__after');
+  const compareDivider = compare.querySelector('.compare__divider');
+  if (!compareAfter || !compareDivider) return;
 
-if (compare) {
-  const compareAfter = document.getElementById('compare-after');
-  const compareDivider = document.getElementById('compare-divider');
   let compareActive = false;
 
   function setComparePosition(clientX) {
     const rect = compare.getBoundingClientRect();
     let percent = ((clientX - rect.left) / rect.width) * 100;
     percent = Math.max(1, Math.min(99, percent));
-    const clip = `inset(0 ${(100 - percent).toFixed(1)}% 0 0)`;
+    // Clip left side of after-image so left of handle = før, right = etter
+    const clip = `inset(0 0 0 ${percent.toFixed(1)}%)`;
     compareAfter.style.clipPath = clip;
     compareAfter.style.webkitClipPath = clip;
     compareDivider.style.left = `${percent.toFixed(1)}%`;
@@ -126,7 +127,7 @@ if (compare) {
   window.addEventListener('touchend', () => {
     compareActive = false;
   });
-}
+});
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
