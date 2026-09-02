@@ -64,7 +64,7 @@ if (form) {
         throw new Error('Submit failed');
       }
     } catch {
-      formStatus.textContent = 'Noe gikk galt. Prøv igjen, eller send e-post til vaktmester.service@outlook.com.';
+      formStatus.textContent = 'Noe gikk galt. Prøv igjen, eller send e-post til post@nmvaktmester.no.';
       formStatus.classList.add('form-note--error');
     } finally {
       submitBtn.disabled = false;
