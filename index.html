@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vaktmester i Sande og Holmestrand kommune. N&M Vaktmesterservice AS tilbyr vedlikehold, snørydding og faste avtaler for borettslag, sameier og næring – siden 1996. Be om tilbud.">
+  <meta name="description" content="Vaktmester i Holmestrand, Horten, Tønsberg og Færder. N&M Vaktmesterservice AS tilbyr vedlikehold, snørydding og faste avtaler for borettslag, sameier og næring – siden 1996.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nmvaktmester.no/">
   <title>Vaktmester Sande &amp; Holmestrand | N&amp;M Vaktmesterservice AS</title>
@@ -15,15 +15,16 @@
   <meta property="og:title" content="Vaktmester Sande &amp; Holmestrand | N&M Vaktmesterservice AS">
   <meta property="og:description" content="Vedlikehold, snørydding og faste avtaler for borettslag, sameier og næring. Lokal vaktmester siden 1996.">
   <meta property="og:url" content="https://nmvaktmester.no/">
-  <meta property="og:image" content="https://nmvaktmester.no/assets/hero/hedge.jpg">
-  <meta property="og:image:width" content="1920">
-  <meta property="og:image:height" content="1080">
+  <meta property="og:image" content="https://nmvaktmester.no/assets/hero/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Uteområde med hekk og grøntareal ved borettslag i Holmestrand">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Vaktmester Sande &amp; Holmestrand | N&M Vaktmesterservice AS">
   <meta name="twitter:description" content="Vedlikehold, snørydding og faste avtaler for borettslag, sameier og næring. Lokal vaktmester siden 1996.">
-  <meta name="twitter:image" content="https://nmvaktmester.no/assets/hero/hedge.jpg">
+  <meta name="twitter:image" content="https://nmvaktmester.no/assets/hero/og-image.jpg">
   <meta name="theme-color" content="#1e4a2c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,14 +36,22 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://nmvaktmester.no/#bedrift",
     "name": "N&M Vaktmesterservice AS",
     "legalName": "N&M Vaktmesterservice AS",
     "alternateName": "Geir Service AS",
     "url": "https://nmvaktmester.no/",
+    "logo": "https://nmvaktmester.no/assets/logo/favicon-180.png",
     "telephone": "+4791367532",
     "email": "vaktmester.service@outlook.com",
-    "image": "https://nmvaktmester.no/assets/hero/hedge.jpg",
-    "description": "Lokal vaktmester i Sande og Holmestrand kommune. Vedlikehold, snørydding og faste avtaler for borettslag, sameier og næring – siden 1996.",
+    "image": "https://nmvaktmester.no/assets/hero/og-image.jpg",
+    "description": "Lokal vaktmester med base i Sande – dekker Holmestrand, Horten, Tønsberg og Færder. Vedlikehold, snørydding og faste avtaler for borettslag, sameier og næring – siden 1996.",
+    "foundingDate": "1996",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "Organisasjonsnummer",
+      "value": "912088510"
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Revåveien 5",
@@ -52,19 +61,76 @@
       "addressCountry": "NO"
     },
     "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Holmestrand kommune" },
+      { "@type": "AdministrativeArea", "name": "Horten kommune" },
+      { "@type": "AdministrativeArea", "name": "Færder kommune" },
       { "@type": "City", "name": "Sande" },
-      { "@type": "City", "name": "Holmestrand" }
+      { "@type": "City", "name": "Holmestrand" },
+      { "@type": "City", "name": "Horten" },
+      { "@type": "City", "name": "Tønsberg" }
     ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "08:00",
       "closes": "16:00"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Vaktmestertjenester",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hagearbeid" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Snørydding" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vedlikehold av eiendom" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Småreparasjoner" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renhold ute" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Faste vaktmesteravtaler", "url": "https://nmvaktmester.no/faste-avtaler.html" } }
+      ]
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hvilke områder dekker dere?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Vi holder til i Sande og tar oppdrag i Holmestrand kommune (Sande, Holmestrand og Hof), Horten, Tønsberg (ikke Re) og Færder (Nøtterøy og Tjøme). Er du usikker på om vi dekker ditt område, send oss en melding." }
+      },
+      {
+        "@type": "Question",
+        "name": "Tar dere oppdrag for privatpersoner?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja. Vi tar enkeltoppdrag for private, og faste avtaler for borettslag, sameier og næring." }
+      },
+      {
+        "@type": "Question",
+        "name": "Hvor raskt får jeg svar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Vi svarer normalt innen 24 timer på hverdager. Haster det, ring 913 67 532 mellom 08:00 og 16:00 på hverdager." }
+      },
+      {
+        "@type": "Question",
+        "name": "Hva koster det?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Prisen avhenger av oppdraget. Beskriv kort hva du trenger hjelp med, så får du et uforpliktende tilbud." }
+      },
+      {
+        "@type": "Question",
+        "name": "Hva inngår i en fast avtale?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Innholdet tilpasses eiendommen – typisk sesongarbeid og uteområder, snørydding om vinteren og løpende vedlikehold av fellesarealer." }
+      },
+      {
+        "@type": "Question",
+        "name": "Er dette samme firma som Geir Service AS?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja. Geir Service AS har skiftet navn til N&M Vaktmesterservice AS – samme organisasjonsnummer og samme drift." }
+      }
+    ]
   }
   </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#hovedinnhold">Hopp til innhold</a>
 
   <div class="scroll-progress" aria-hidden="true">
     <div class="scroll-progress__bar" id="scroll-progress-bar"></div>
@@ -105,16 +171,21 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero" id="top">
+  <section class="hero" id="top" data-track-area="hero">
     <div class="hero__media" aria-hidden="true">
-      <img
-        class="hero__media-img"
-        src="assets/hero/hedge.jpg"
-        alt=""
-        width="1920"
-        height="1080"
-        fetchpriority="high"
-      >
+      <picture>
+        <source media="(max-width: 700px)" srcset="assets/hero/hedge-mobil.webp" type="image/webp">
+        <img
+          class="hero__media-img"
+          src="assets/hero/hedge.jpg"
+          srcset="assets/hero/hedge-1280.jpg 1280w, assets/hero/hedge.jpg 1920w"
+          sizes="100vw"
+          alt=""
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        >
+      </picture>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
 
@@ -127,14 +198,19 @@
         </p>
         <div class="hero__actions">
           <a href="#kontakt" class="btn btn--accent">Be om tilbud</a>
-          <a href="tel:+4791367532" class="btn btn--ghost-light">Ring oss</a>
+          <a href="tel:+4791367532" class="btn btn--ghost-light">Ring 913 67 532</a>
         </div>
+        <ul class="hero__facts">
+          <li>Siden 1996</li>
+          <li>Fra Sande til Færder</li>
+          <li>Svar innen 24 timer på hverdager</li>
+        </ul>
       </div>
     </div>
     <div class="curve curve--bottom" aria-hidden="true"></div>
   </section>
 
-  <main>
+  <main id="hovedinnhold">
 
     <!-- Tjenester -->
     <section class="section section--services" id="tjenester">
@@ -243,74 +319,76 @@
         <div class="section__header section__header--center">
           <p class="section__eyebrow">Fra feltet</p>
           <h2 class="section__title">Bilder fra oppdrag</h2>
-          <p class="section__intro">Ekte oppdrag i borettslag, næring og uteområder. Dra slideren for å se før og etter.</p>
+          <p class="section__intro">Ekte oppdrag fra borettslag, næring og uteområder. Velg et oppdrag og dra i bildet for å se før og etter.</p>
         </div>
 
-        <div class="work">
-          <div class="work-gallery">
-            <figure class="work-card work-card--compare">
-              <div class="work-card__image">
-                <div class="compare compare--hint" aria-label="Før og etter beplantning. Dra for å se forskjellen.">
-                  <img class="compare__before" src="assets/arbeid/beplantning-foer.jpg" alt="Før: overgrodd rabatt med ugress langs gjerde" width="900" height="1200">
-                  <img class="compare__after" src="assets/arbeid/beplantning-etter.jpg" alt="" width="900" height="1200" aria-hidden="true">
-                  <div class="compare__divider" aria-hidden="true">
-                    <div class="compare__handle">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/>
-                      </svg>
-                    </div>
-                  </div>
-                  <span class="compare__label compare__label--before">Før</span>
-                  <span class="compare__label compare__label--after">Etter</span>
+        <div class="showcase">
+          <figure class="showcase__stage">
+            <div class="compare compare--hint" role="slider" tabindex="0" aria-label="Før og etter: Beplantning. Dra eller bruk piltastene for å se forskjellen." aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" data-title="Beplantning">
+              <img class="compare__before" src="assets/arbeid/beplantning-foer.jpg" srcset="assets/arbeid/beplantning-foer-600.webp 600w, assets/arbeid/beplantning-foer.webp 900w" sizes="(max-width: 640px) 92vw, 520px" alt="Før: overgrodd rabatt med ugress langs gjerde" width="900" height="1200" loading="lazy" decoding="async" draggable="false">
+              <img class="compare__after" src="assets/arbeid/beplantning-etter.jpg" srcset="assets/arbeid/beplantning-etter-600.webp 600w, assets/arbeid/beplantning-etter.webp 900w" sizes="(max-width: 640px) 92vw, 520px" alt="" width="900" height="1200" loading="lazy" decoding="async" draggable="false" aria-hidden="true">
+              <div class="compare__divider" aria-hidden="true">
+                <div class="compare__handle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/>
+                  </svg>
                 </div>
               </div>
-              <figcaption class="work-card__caption">
-                <h3 class="work-card__title">Beplantning</h3>
-                <p class="work-card__text">Fra overgrodd rabatt til ryddet bed med bark og ny beplantning langs uteområdet.</p>
-              </figcaption>
-            </figure>
+              <span class="compare__label compare__label--before">Før</span>
+              <span class="compare__label compare__label--after">Etter</span>
+            </div>
+            <figcaption class="showcase__caption" aria-live="polite">Beplantning</figcaption>
+          </figure>
 
-            <figure class="work-card work-card--compare">
-              <div class="work-card__image">
-                <div class="compare compare--hint" aria-label="Før og etter sammenligning. Dra for å se forskjellen.">
-                  <img class="compare__before" src="assets/arbeid/foer-etter-before.jpg" alt="Før opprydding av heller" width="900" height="1200">
-                  <img class="compare__after" src="assets/arbeid/foer-etter-after.jpg" alt="" width="900" height="1200" aria-hidden="true">
-                  <div class="compare__divider" aria-hidden="true">
-                    <div class="compare__handle">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/>
-                      </svg>
-                    </div>
-                  </div>
-                  <span class="compare__label compare__label--before">Før</span>
-                  <span class="compare__label compare__label--after">Etter</span>
-                </div>
-              </div>
-              <figcaption class="work-card__caption">
-                <h3 class="work-card__title">Heller</h3>
-                <p class="work-card__text">Rehabilitering av belegningsstein med demontering, utbedring av pukk og presis legging for et jevnt og holdbart gangareal.</p>
-              </figcaption>
-            </figure>
+          <div class="showcase__side">
+            <p class="showcase__label">Før og etter</p>
+            <div class="showcase__jobs" role="group" aria-label="Velg oppdrag">
+              <button type="button" class="job is-active" aria-pressed="true"
+                data-title="Beplantning" data-before="assets/arbeid/beplantning-foer" data-after="assets/arbeid/beplantning-etter" data-alt="Før: overgrodd rabatt med ugress langs gjerde">
+                <img class="job__thumb" src="assets/arbeid/miniatyr-beplantning.webp" alt="" width="180" height="240" loading="lazy" decoding="async">
+                <span class="job__body">
+                  <span class="job__tag">Uteområde</span>
+                  <span class="job__title">Beplantning</span>
+                  <span class="job__text">Fra overgrodd rabatt til ryddet bed med bark og ny beplantning langs uteområdet.</span>
+                </span>
+              </button>
+              <button type="button" class="job" aria-pressed="false"
+                data-title="Heller" data-before="assets/arbeid/foer-etter-before" data-after="assets/arbeid/foer-etter-after" data-alt="Før: belegningsstein med ugress i fugene">
+                <img class="job__thumb" src="assets/arbeid/miniatyr-heller.webp" alt="" width="180" height="240" loading="lazy" decoding="async">
+                <span class="job__body">
+                  <span class="job__tag">Borettslag</span>
+                  <span class="job__title">Heller</span>
+                  <span class="job__text">Rehabilitering av belegningsstein med demontering, utbedring av pukk og presis legging for et jevnt og holdbart gangareal.</span>
+                </span>
+              </button>
+              <button type="button" class="job" aria-pressed="false"
+                data-title="Fliser og asfaltkant" data-before="assets/arbeid/asfalt-foer" data-after="assets/arbeid/asfalt-etter" data-alt="Før: ødelagte fliser og sprukket asfaltkant ved inngangen">
+                <img class="job__thumb" src="assets/arbeid/miniatyr-asfalt.webp" alt="" width="180" height="240" loading="lazy" decoding="async">
+                <span class="job__body">
+                  <span class="job__tag">Næring</span>
+                  <span class="job__title">Fliser og asfaltkant</span>
+                  <span class="job__text">Fiks av ødelagte fliser og ny asfaltkant langs inngangspartiet til et næringsbygg – for en jevn og trygg overgang inn til bygget.</span>
+                </span>
+              </button>
+            </div>
 
-            <figure class="work-card">
-              <div class="work-card__image">
-                <img src="assets/arbeid/hekktrimming.jpg" alt="Hekktrimming ved borettslag" width="768" height="1024" loading="lazy">
-              </div>
-              <figcaption class="work-card__caption">
-                <h3 class="work-card__title">Hekk og vegetasjon</h3>
-                <p class="work-card__text">Hekktrimming og stell av grøntarealer for borettslag og sameier i området.</p>
-              </figcaption>
-            </figure>
-
-            <figure class="work-card">
-              <div class="work-card__image">
-                <img src="assets/arbeid/uteomrade-vedlikehold.jpg" alt="Vedlikehold av blomsterbed ved næringsbygg" width="768" height="1024" loading="lazy">
-              </div>
-              <figcaption class="work-card__caption">
-                <h3 class="work-card__title">Uteområder og næring</h3>
-                <p class="work-card__text">Vedlikehold av utearealer for næring og fellesområder – gjennom hele sesongen.</p>
-              </figcaption>
-            </figure>
+            <p class="showcase__label">Fra hverdagen</p>
+            <div class="showcase__photos">
+              <figure class="photo-tile">
+                <img src="assets/arbeid/hekktrimming.jpg" srcset="assets/arbeid/hekktrimming-600.webp 600w, assets/arbeid/hekktrimming.webp 768w" sizes="(max-width: 640px) 46vw, 260px" alt="Hekktrimming ved borettslag" width="768" height="1024" loading="lazy" decoding="async">
+                <figcaption>
+                  <span class="photo-tile__title">Hekk og vegetasjon</span>
+                  <span class="photo-tile__text">Hekktrimming og stell av grøntarealer</span>
+                </figcaption>
+              </figure>
+              <figure class="photo-tile">
+                <img src="assets/arbeid/uteomrade-vedlikehold.jpg" srcset="assets/arbeid/uteomrade-vedlikehold-600.webp 600w, assets/arbeid/uteomrade-vedlikehold.webp 768w" sizes="(max-width: 640px) 46vw, 260px" alt="Vedlikehold av blomsterbed ved næringsbygg" width="768" height="1024" loading="lazy" decoding="async">
+                <figcaption>
+                  <span class="photo-tile__title">Uteområder og næring</span>
+                  <span class="photo-tile__text">Vedlikehold gjennom hele sesongen</span>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
@@ -388,7 +466,7 @@
     </section>
 
     <!-- Tillitsstripe -->
-    <section class="trust-strip" aria-label="Be om tilbud">
+    <section class="trust-strip" aria-label="Be om tilbud" data-track-area="tilbudsstripe">
       <div class="curve curve--top" aria-hidden="true"></div>
       <div class="container trust-strip__inner">
         <div class="trust-strip__copy">
@@ -412,34 +490,147 @@
           <p class="section__eyebrow">Hvor vi jobber</p>
           <h2 class="section__title">Område vi dekker</h2>
           <p class="section__intro">
-            Vi holder til i Sande og tar oppdrag i Holmestrand kommune og omegn.
-            Usikker på om vi dekker ditt område? Send oss en melding – vi svarer raskt.
+            Vi holder til i Sande og tar oppdrag i Holmestrand, Horten, Tønsberg og Færder.
+            Trykk på et område for å se det på kartet.
           </p>
         </div>
 
         <div class="area">
-          <div class="area-box">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            <div>
-              <p><strong>Base i Sande</strong> · Holmestrand kommune og omegn</p>
-              <p class="area-box__note">Typisk oppdrag: borettslag, sameier, næring og private uteområder.</p>
+          <div class="area__info">
+            <div class="area-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <p><strong>Base i Sande</strong> · Holmestrand, Horten, Tønsberg og Færder</p>
+                <p class="area-box__note">Typisk oppdrag: borettslag, sameier, næring og private uteområder.</p>
+              </div>
             </div>
+
+            <div class="area-picker" role="group" aria-label="Vis område på kartet">
+              <button type="button" class="area-pick is-active" data-area="alle" aria-pressed="true">
+                <span class="area-pick__name">Hele området</span>
+                <span class="area-pick__sub">Fra Sande i nord til Tjøme i sør</span>
+              </button>
+              <button type="button" class="area-pick" data-area="holmestrand" aria-pressed="false">
+                <span class="area-pick__name">Holmestrand kommune</span>
+                <span class="area-pick__sub">Sande · Holmestrand · Hof</span>
+              </button>
+              <button type="button" class="area-pick" data-area="horten" aria-pressed="false">
+                <span class="area-pick__name">Horten kommune</span>
+                <span class="area-pick__sub">Horten · Åsgårdstrand · Skoppum</span>
+              </button>
+              <button type="button" class="area-pick" data-area="tonsberg" aria-pressed="false">
+                <span class="area-pick__name">Tønsberg</span>
+                <span class="area-pick__sub">Tønsberg, Sem og Slagen – ikke Re</span>
+              </button>
+              <button type="button" class="area-pick" data-area="faerder" aria-pressed="false">
+                <span class="area-pick__name">Færder kommune</span>
+                <span class="area-pick__sub">Nøtterøy · Tjøme</span>
+              </button>
+            </div>
+
+            <p class="area-cta">
+              Usikker på om vi dekker deg?
+              <a href="#kontakt">Send en melding</a>
+            </p>
           </div>
 
-          <ul class="area-pills">
-            <li>Sande</li>
-            <li>Holmestrand</li>
-            <li>Holmestrand kommune</li>
-            <li>Omegn</li>
-          </ul>
+          <figure class="area-map" data-active="alle">
+            <div class="area-map__viewport">
+              <div class="area-map__canvas">
+                <picture>
+                  <source type="image/webp" srcset="assets/omrade/kart.webp">
+                  <img class="area-map__img" src="assets/omrade/kart.jpg" alt="" width="553" height="950" loading="lazy" decoding="async">
+                </picture>
+                <svg class="area-map__svg" viewBox="0 0 553 950" role="img" aria-labelledby="area-map-title">
+                  <title id="area-map-title">Kart som viser Holmestrand, Horten, Tønsberg (uten Re) og Færder, med base i Sande</title>
+                  <defs>
+                    <mask id="area-land" maskUnits="userSpaceOnUse" x="0" y="0" width="553" height="950">
+                      <image href="assets/omrade/landmaske.png" x="0" y="0" width="553" height="950"/>
+                    </mask>
+                  </defs>
+                  <g class="area-map__region" data-area="holmestrand" data-name="Holmestrand kommune" data-focus="25 37 347 330">
+                    <path class="area-map__fill" mask="url(#area-land)" d="M297.6,43.4 294.0,40.9 285.4,42.0 284.0,39.9 280.2,39.0 279.2,38.0 277.7,37.7 275.5,38.2 274.4,37.7 272.5,38.8 270.2,37.5 269.5,38.1 266.4,38.7 264.7,39.6 263.9,42.6 261.1,48.5 257.2,44.0 255.6,43.5 255.3,41.8 250.9,41.4 249.5,45.8 250.3,48.6 250.0,49.8 247.9,50.3 247.8,51.4 246.9,51.5 246.8,52.2 244.4,51.9 242.7,47.6 240.7,48.3 240.1,46.0 235.2,44.8 230.5,41.3 228.5,41.2 227.8,40.5 226.7,41.9 224.2,42.5 223.0,45.3 222.5,45.0 218.3,46.2 214.2,44.1 211.6,45.8 208.5,46.4 204.0,44.5 201.9,46.2 202.5,48.0 201.9,49.3 199.9,47.5 191.7,44.6 186.6,40.8 171.5,42.3 170.8,45.7 169.5,46.4 170.0,47.0 168.6,56.6 166.5,58.3 161.1,60.5 159.2,63.4 152.1,82.8 144.0,81.9 125.4,81.0 121.9,81.8 119.8,84.4 114.7,85.8 111.1,76.4 105.4,66.4 103.2,64.6 101.3,60.5 96.9,58.1 95.8,56.2 93.5,54.6 90.7,51.2 86.1,52.2 87.2,55.1 87.2,56.7 86.0,57.5 87.0,59.5 87.2,62.7 84.0,63.3 84.8,65.4 83.8,66.2 83.8,68.4 82.2,71.8 82.3,72.5 80.1,73.8 78.6,76.4 76.5,78.2 74.9,81.4 77.6,85.6 77.6,88.0 72.3,92.6 68.9,97.2 69.0,103.7 70.1,109.1 73.6,118.3 63.6,122.2 57.9,126.1 53.0,128.5 47.2,130.5 44.7,132.4 40.9,137.3 38.5,138.5 45.0,162.9 36.2,163.8 33.2,165.8 30.0,169.2 25.7,169.3 32.2,174.3 45.7,190.4 68.6,228.6 79.3,243.8 87.3,250.1 102.0,266.8 105.6,270.1 113.0,282.6 115.2,287.8 119.0,293.8 120.6,302.4 126.0,311.5 128.6,320.4 132.1,328.6 133.3,337.5 133.8,347.7 132.9,353.0 146.1,353.8 148.6,353.5 151.2,354.6 153.1,356.9 153.9,356.8 155.9,357.8 157.1,357.4 157.1,356.6 158.1,355.5 159.3,356.2 159.6,357.4 160.4,357.4 161.7,360.3 162.1,363.0 166.0,361.7 173.5,361.1 183.0,362.3 189.5,363.7 195.4,363.9 191.4,357.8 190.8,355.7 189.5,354.9 186.4,350.9 186.0,348.1 189.0,348.0 191.5,349.4 193.9,349.1 191.0,341.0 194.2,339.6 197.6,339.9 204.2,339.0 203.5,335.9 201.6,332.5 200.4,328.2 202.1,328.8 211.1,325.4 212.1,322.8 211.0,319.9 211.1,317.2 213.1,318.9 213.4,319.9 216.9,324.4 218.4,324.6 219.1,325.7 220.0,325.7 221.2,326.5 222.3,326.3 224.2,329.0 226.0,326.5 225.8,324.7 226.4,323.2 225.9,321.4 226.7,317.2 229.1,316.2 233.3,313.0 238.6,313.6 243.7,315.1 244.7,327.5 246.5,330.2 246.5,329.4 249.3,333.9 251.3,340.6 252.1,340.2 252.8,341.1 251.5,342.3 252.4,344.2 252.2,345.6 252.8,348.1 251.2,350.3 252.5,353.4 252.6,358.3 253.3,359.0 253.5,361.1 255.4,362.0 258.1,362.1 261.6,360.8 261.9,360.0 264.1,361.4 264.6,361.5 264.7,358.3 267.5,357.7 268.7,356.9 268.4,351.4 269.1,351.3 270.8,352.6 276.4,352.6 276.7,350.9 275.2,346.8 275.3,345.3 275.6,346.2 276.7,345.5 277.8,349.7 278.7,349.4 278.8,350.4 282.5,349.4 283.4,351.8 284.3,351.4 284.8,352.4 286.4,351.7 284.1,347.2 283.4,342.7 283.6,341.3 285.4,340.9 287.3,341.5 287.6,348.6 289.0,350.8 289.7,350.3 291.9,354.9 295.2,352.2 295.1,351.5 300.2,350.4 301.2,350.7 303.7,347.9 306.1,348.2 306.9,348.5 306.9,349.5 308.5,349.6 307.0,354.6 308.9,354.8 312.5,353.2 314.0,359.0 315.5,358.8 316.4,357.1 318.1,356.5 318.1,355.6 319.8,355.6 320.3,357.9 321.2,358.1 321.6,357.6 321.3,355.5 322.2,354.8 323.0,351.5 322.0,349.1 323.9,346.7 322.9,345.6 323.7,342.8 322.6,336.4 324.7,336.1 324.8,337.6 325.9,339.7 326.2,342.9 328.7,343.1 329.3,344.0 329.4,346.4 333.9,344.6 334.2,343.9 337.2,347.1 337.3,346.3 337.6,347.4 338.1,347.4 337.3,344.3 335.8,341.6 336.2,341.2 337.4,342.9 338.2,342.5 339.4,343.3 340.3,347.2 340.9,347.0 340.8,343.7 341.8,351.3 341.2,357.5 341.9,358.5 343.0,358.1 343.5,358.7 344.3,358.1 344.2,359.1 345.4,359.7 345.5,360.1 344.4,361.2 345.0,362.4 345.8,362.6 345.1,364.4 346.4,366.5 348.4,367.0 349.8,366.2 352.8,366.5 353.6,367.7 357.2,366.2 356.9,363.0 366.6,359.7 371.7,337.0 389.7,335.2 419.3,316.7 374.1,266.7 377.2,244.1 367.1,238.6 362.8,235.7 363.9,234.6 363.8,233.2 363.2,233.7 362.1,232.8 361.8,231.3 359.3,230.6 359.3,229.5 360.5,227.8 359.7,227.5 359.1,226.5 357.7,227.2 354.5,227.5 353.9,226.2 354.1,225.3 352.1,222.9 352.6,220.3 353.6,219.4 353.3,218.6 352.3,217.9 349.5,218.1 348.5,216.6 348.2,213.3 345.7,213.6 344.3,209.7 343.2,208.9 343.2,205.6 345.4,204.7 345.4,204.2 344.9,204.1 342.5,199.0 340.3,199.3 338.0,196.6 337.3,194.2 336.6,185.4 335.2,181.0 335.0,175.9 330.4,152.7 328.4,135.9 328.5,134.2 330.5,131.2 330.5,129.9 329.5,127.8 331.9,114.6 331.5,111.5 332.5,105.5 331.7,103.5 332.5,101.0 332.3,99.3 328.9,92.2 328.7,88.7 327.5,84.2 323.7,76.5 322.6,73.1 324.4,72.9 321.7,67.8 321.0,61.3 320.2,59.2 316.8,55.1 307.3,51.4 308.0,45.8 304.3,44.1Z"/>
+                    <path class="area-map__line" pathLength="1" d="M297.6,43.4 294.0,40.9 285.4,42.0 284.0,39.9 280.2,39.0 279.2,38.0 277.7,37.7 275.5,38.2 274.4,37.7 272.5,38.8 270.2,37.5 269.5,38.1 266.4,38.7 264.7,39.6 263.9,42.6 261.1,48.5 257.2,44.0 255.6,43.5 255.3,41.8 250.9,41.4 249.5,45.8 250.3,48.6 250.0,49.8 247.9,50.3 247.8,51.4 246.9,51.5 246.8,52.2 244.4,51.9 242.7,47.6 240.7,48.3 240.1,46.0 235.2,44.8 230.5,41.3 228.5,41.2 227.8,40.5 226.7,41.9 224.2,42.5 223.0,45.3 222.5,45.0 218.3,46.2 214.2,44.1 211.6,45.8 208.5,46.4 204.0,44.5 201.9,46.2 202.5,48.0 201.9,49.3 199.9,47.5 191.7,44.6 186.6,40.8 171.5,42.3 170.8,45.7 169.5,46.4 170.0,47.0 168.6,56.6 166.5,58.3 161.1,60.5 159.2,63.4 152.1,82.8 144.0,81.9 125.4,81.0 121.9,81.8 119.8,84.4 114.7,85.8 111.1,76.4 105.4,66.4 103.2,64.6 101.3,60.5 96.9,58.1 95.8,56.2 93.5,54.6 90.7,51.2 86.1,52.2 87.2,55.1 87.2,56.7 86.0,57.5 87.0,59.5 87.2,62.7 84.0,63.3 84.8,65.4 83.8,66.2 83.8,68.4 82.2,71.8 82.3,72.5 80.1,73.8 78.6,76.4 76.5,78.2 74.9,81.4 77.6,85.6 77.6,88.0 72.3,92.6 68.9,97.2 69.0,103.7 70.1,109.1 73.6,118.3 63.6,122.2 57.9,126.1 53.0,128.5 47.2,130.5 44.7,132.4 40.9,137.3 38.5,138.5 45.0,162.9 36.2,163.8 33.2,165.8 30.0,169.2 25.7,169.3 32.2,174.3 45.7,190.4 68.6,228.6 79.3,243.8 87.3,250.1 102.0,266.8 105.6,270.1 113.0,282.6 115.2,287.8 119.0,293.8 120.6,302.4 126.0,311.5 128.6,320.4 132.1,328.6 133.3,337.5 133.8,347.7 132.9,353.0 146.1,353.8 148.6,353.5 151.2,354.6 153.1,356.9 153.9,356.8 155.9,357.8 157.1,357.4 157.1,356.6 158.1,355.5 159.3,356.2 159.6,357.4 160.4,357.4 161.7,360.3 162.1,363.0 166.0,361.7 173.5,361.1 183.0,362.3 189.5,363.7 195.4,363.9 191.4,357.8 190.8,355.7 189.5,354.9 186.4,350.9 186.0,348.1 189.0,348.0 191.5,349.4 193.9,349.1 191.0,341.0 194.2,339.6 197.6,339.9 204.2,339.0 203.5,335.9 201.6,332.5 200.4,328.2 202.1,328.8 211.1,325.4 212.1,322.8 211.0,319.9 211.1,317.2 213.1,318.9 213.4,319.9 216.9,324.4 218.4,324.6 219.1,325.7 220.0,325.7 221.2,326.5 222.3,326.3 224.2,329.0 226.0,326.5 225.8,324.7 226.4,323.2 225.9,321.4 226.7,317.2 229.1,316.2 233.3,313.0 238.6,313.6 243.7,315.1 244.7,327.5 246.5,330.2 246.5,329.4 249.3,333.9 251.3,340.6 252.1,340.2 252.8,341.1 251.5,342.3 252.4,344.2 252.2,345.6 252.8,348.1 251.2,350.3 252.5,353.4 252.6,358.3 253.3,359.0 253.5,361.1 255.4,362.0 258.1,362.1 261.6,360.8 261.9,360.0 264.1,361.4 264.6,361.5 264.7,358.3 267.5,357.7 268.7,356.9 268.4,351.4 269.1,351.3 270.8,352.6 276.4,352.6 276.7,350.9 275.2,346.8 275.3,345.3 275.6,346.2 276.7,345.5 277.8,349.7 278.7,349.4 278.8,350.4 282.5,349.4 283.4,351.8 284.3,351.4 284.8,352.4 286.4,351.7 284.1,347.2 283.4,342.7 283.6,341.3 285.4,340.9 287.3,341.5 287.6,348.6 289.0,350.8 289.7,350.3 291.9,354.9 295.2,352.2 295.1,351.5 300.2,350.4 301.2,350.7 303.7,347.9 306.1,348.2 306.9,348.5 306.9,349.5 308.5,349.6 307.0,354.6 308.9,354.8 312.5,353.2 314.0,359.0 315.5,358.8 316.4,357.1 318.1,356.5 318.1,355.6 319.8,355.6 320.3,357.9 321.2,358.1 321.6,357.6 321.3,355.5 322.2,354.8 323.0,351.5 322.0,349.1 323.9,346.7 322.9,345.6 323.7,342.8 322.6,336.4 324.7,336.1 324.8,337.6 325.9,339.7 326.2,342.9 328.7,343.1 329.3,344.0 329.4,346.4 333.9,344.6 334.2,343.9 337.2,347.1 337.3,346.3 337.6,347.4 338.1,347.4 337.3,344.3 335.8,341.6 336.2,341.2 337.4,342.9 338.2,342.5 339.4,343.3 340.3,347.2 340.9,347.0 340.8,343.7 341.8,351.3 341.2,357.5 341.9,358.5 343.0,358.1 343.5,358.7 344.3,358.1 344.2,359.1 345.4,359.7 345.5,360.1 344.4,361.2 345.0,362.4 345.8,362.6 345.1,364.4 346.4,366.5 348.4,367.0 349.8,366.2 352.8,366.5 353.6,367.7 357.2,366.2 356.9,363.0 366.6,359.7 371.7,337.0 389.7,335.2 419.3,316.7 374.1,266.7 377.2,244.1 367.1,238.6 362.8,235.7 363.9,234.6 363.8,233.2 363.2,233.7 362.1,232.8 361.8,231.3 359.3,230.6 359.3,229.5 360.5,227.8 359.7,227.5 359.1,226.5 357.7,227.2 354.5,227.5 353.9,226.2 354.1,225.3 352.1,222.9 352.6,220.3 353.6,219.4 353.3,218.6 352.3,217.9 349.5,218.1 348.5,216.6 348.2,213.3 345.7,213.6 344.3,209.7 343.2,208.9 343.2,205.6 345.4,204.7 345.4,204.2 344.9,204.1 342.5,199.0 340.3,199.3 338.0,196.6 337.3,194.2 336.6,185.4 335.2,181.0 335.0,175.9 330.4,152.7 328.4,135.9 328.5,134.2 330.5,131.2 330.5,129.9 329.5,127.8 331.9,114.6 331.5,111.5 332.5,105.5 331.7,103.5 332.5,101.0 332.3,99.3 328.9,92.2 328.7,88.7 327.5,84.2 323.7,76.5 322.6,73.1 324.4,72.9 321.7,67.8 321.0,61.3 320.2,59.2 316.8,55.1 307.3,51.4 308.0,45.8 304.3,44.1Z"/>
+                  </g>
+                  <g class="area-map__region" data-area="horten" data-name="Horten kommune" data-focus="330 354 150 160">
+                    <path class="area-map__fill" mask="url(#area-land)" d="M353.2,429.1 354.1,429.1 354.6,430.3 359.2,430.5 359.5,429.8 358.4,438.7 356.2,438.7 356.7,440.3 358.5,441.5 358.3,441.9 359.7,443.1 359.5,444.8 360.0,445.4 359.3,447.6 359.8,449.3 359.7,453.3 360.2,455.4 361.1,455.6 361.0,459.7 362.0,465.2 363.2,466.8 365.5,465.8 366.4,466.7 364.8,468.5 367.1,470.8 367.3,473.0 366.3,474.6 366.8,475.3 367.0,480.3 367.6,481.2 368.3,485.4 372.2,485.4 370.9,490.9 370.7,494.0 371.7,502.2 378.7,503.3 380.3,502.9 382.8,501.0 386.2,500.7 389.0,499.1 388.3,498.0 389.2,496.1 388.9,494.7 390.0,494.2 391.5,495.0 391.8,493.4 393.2,492.6 395.0,492.6 394.8,493.4 395.6,495.8 398.4,498.7 399.3,500.7 406.2,501.8 409.2,500.8 410.6,507.0 412.4,506.9 413.2,507.6 416.6,508.4 417.3,508.2 418.7,508.9 420.9,507.8 421.1,512.8 420.6,514.7 425.9,512.4 427.8,512.8 433.1,508.0 451.0,495.2 488.1,512.8 508.4,515.5 520.2,493.7 520.8,468.0 512.8,441.0 483.5,413.5 478.2,384.2 482.8,349.0 419.3,316.7 389.7,335.2 371.7,337.0 366.6,359.7 356.9,363.0 357.2,366.2 353.6,367.7 352.8,366.5 349.8,366.2 348.4,367.0 346.4,366.5 345.1,364.4 345.8,362.6 344.8,362.2 345.3,363.2 344.1,363.5 343.7,364.6 344.7,367.3 344.3,368.0 343.6,367.8 343.6,369.5 343.1,369.2 342.0,370.2 341.4,373.3 340.8,375.0 339.7,376.1 339.2,378.4 340.4,383.6 338.4,387.5 335.2,387.6 331.6,386.6 331.0,389.0 330.2,389.4 332.3,390.9 332.0,393.6 332.7,397.6 331.8,398.8 331.9,401.4 332.9,402.2 336.0,402.5 336.6,404.1 334.2,404.6 332.3,406.1 332.6,408.1 331.9,409.4 332.5,411.0 336.4,411.5 336.6,415.7 334.3,415.9 333.4,423.2 336.2,423.1 336.2,424.4 340.0,427.4 339.3,429.9 340.7,435.3 341.4,435.8 342.1,436.0 344.2,434.0 344.7,431.1 346.7,431.0 347.1,425.5 348.0,425.1 349.3,426.1 350.9,426.0ZM370.6,464.8 370.5,464.1 369.5,464.4 369.5,465.3 368.2,465.5 368.4,466.3 367.8,466.6 368.1,471.6 370.7,472.4 370.5,473.9 371.2,474.2 369.9,479.8 373.0,481.3 373.9,481.5 374.9,481.0 374.6,477.8 375.7,468.5 374.8,468.3 373.8,469.1 372.7,466.4 370.7,466.1Z"/>
+                    <path class="area-map__line" pathLength="1" d="M353.2,429.1 354.1,429.1 354.6,430.3 359.2,430.5 359.5,429.8 358.4,438.7 356.2,438.7 356.7,440.3 358.5,441.5 358.3,441.9 359.7,443.1 359.5,444.8 360.0,445.4 359.3,447.6 359.8,449.3 359.7,453.3 360.2,455.4 361.1,455.6 361.0,459.7 362.0,465.2 363.2,466.8 365.5,465.8 366.4,466.7 364.8,468.5 367.1,470.8 367.3,473.0 366.3,474.6 366.8,475.3 367.0,480.3 367.6,481.2 368.3,485.4 372.2,485.4 370.9,490.9 370.7,494.0 371.7,502.2 378.7,503.3 380.3,502.9 382.8,501.0 386.2,500.7 389.0,499.1 388.3,498.0 389.2,496.1 388.9,494.7 390.0,494.2 391.5,495.0 391.8,493.4 393.2,492.6 395.0,492.6 394.8,493.4 395.6,495.8 398.4,498.7 399.3,500.7 406.2,501.8 409.2,500.8 410.6,507.0 412.4,506.9 413.2,507.6 416.6,508.4 417.3,508.2 418.7,508.9 420.9,507.8 421.1,512.8 420.6,514.7 425.9,512.4 427.8,512.8 433.1,508.0 451.0,495.2 488.1,512.8 508.4,515.5 520.2,493.7 520.8,468.0 512.8,441.0 483.5,413.5 478.2,384.2 482.8,349.0 419.3,316.7 389.7,335.2 371.7,337.0 366.6,359.7 356.9,363.0 357.2,366.2 353.6,367.7 352.8,366.5 349.8,366.2 348.4,367.0 346.4,366.5 345.1,364.4 345.8,362.6 344.8,362.2 345.3,363.2 344.1,363.5 343.7,364.6 344.7,367.3 344.3,368.0 343.6,367.8 343.6,369.5 343.1,369.2 342.0,370.2 341.4,373.3 340.8,375.0 339.7,376.1 339.2,378.4 340.4,383.6 338.4,387.5 335.2,387.6 331.6,386.6 331.0,389.0 330.2,389.4 332.3,390.9 332.0,393.6 332.7,397.6 331.8,398.8 331.9,401.4 332.9,402.2 336.0,402.5 336.6,404.1 334.2,404.6 332.3,406.1 332.6,408.1 331.9,409.4 332.5,411.0 336.4,411.5 336.6,415.7 334.3,415.9 333.4,423.2 336.2,423.1 336.2,424.4 340.0,427.4 339.3,429.9 340.7,435.3 341.4,435.8 342.1,436.0 344.2,434.0 344.7,431.1 346.7,431.0 347.1,425.5 348.0,425.1 349.3,426.1 350.9,426.0ZM370.6,464.8 370.5,464.1 369.5,464.4 369.5,465.3 368.2,465.5 368.4,466.3 367.8,466.6 368.1,471.6 370.7,472.4 370.5,473.9 371.2,474.2 369.9,479.8 373.0,481.3 373.9,481.5 374.9,481.0 374.6,477.8 375.7,468.5 374.8,468.3 373.8,469.1 372.7,466.4 370.7,466.1Z"/>
+                  </g>
+                  <g class="area-map__region" data-area="tonsberg" data-name="Tønsberg" data-focus="289 492 181 178">
+                    <path class="area-map__fill" mask="url(#area-land)" d="M289.4,568.2 289.7,571.0 290.9,570.9 292.2,572.6 296.4,572.9 296.2,576.3 297.0,578.5 295.4,582.7 293.5,584.4 292.4,584.1 290.3,585.3 290.3,585.8 292.5,586.8 293.3,586.0 293.8,586.3 292.4,588.2 292.8,588.8 293.8,588.7 292.6,590.8 294.0,591.5 292.5,594.1 292.8,596.2 294.1,596.9 294.4,600.0 295.4,602.7 295.1,604.0 298.7,605.1 300.0,604.8 301.2,605.6 305.2,605.5 306.0,605.4 307.6,603.5 309.4,604.4 311.7,603.0 312.8,603.2 311.4,605.5 311.1,609.3 311.5,613.4 312.6,616.7 309.3,615.6 309.0,621.9 310.4,622.5 311.0,621.2 311.7,621.5 312.1,620.9 314.2,621.9 316.0,618.6 317.5,619.1 324.9,618.2 328.9,644.1 340.6,646.8 340.3,649.5 342.1,649.6 343.5,649.1 343.8,646.9 345.2,647.4 344.7,652.0 346.6,655.2 347.4,654.7 347.5,653.0 348.7,653.0 349.6,648.4 353.2,649.4 356.2,648.6 361.8,649.1 363.0,632.8 367.4,615.7 373.6,615.0 374.6,620.8 373.7,623.5 375.8,623.6 380.9,628.7 383.4,633.0 384.2,632.9 385.0,633.6 385.2,636.1 388.2,637.5 389.1,637.1 389.2,636.1 391.2,637.2 392.3,636.4 395.6,632.1 405.1,634.7 406.8,647.4 412.9,650.1 415.6,653.1 414.8,656.7 416.9,661.2 420.9,663.3 423.4,667.4 435.0,677.1 439.7,666.3 439.3,647.5 442.6,643.9 447.1,647.8 451.4,659.1 456.3,657.7 471.1,638.1 501.7,618.8 517.2,618.8 517.6,577.9 508.4,515.5 488.1,512.8 451.0,495.2 429.7,510.5 427.8,512.8 425.9,512.4 420.6,514.7 421.1,512.8 420.9,507.8 418.7,508.9 417.3,508.2 416.6,508.4 413.2,507.6 412.4,506.9 410.6,507.0 409.2,500.8 406.2,501.8 399.3,500.7 398.4,498.7 395.6,495.8 394.8,493.4 395.0,492.6 393.2,492.6 391.8,493.4 391.5,495.0 390.0,494.2 388.9,494.7 389.2,496.1 388.3,498.0 389.0,499.1 386.2,500.7 382.8,501.0 380.3,502.9 378.7,503.3 371.7,502.2 372.1,505.6 365.2,507.2 364.7,510.5 361.9,511.4 361.4,512.4 362.2,515.5 362.0,517.2 361.3,517.0 361.4,515.9 360.3,513.9 358.8,507.2 357.8,506.1 354.8,507.0 354.8,508.4 351.9,509.2 351.1,507.2 349.0,507.5 348.0,506.0 345.3,505.5 345.8,506.8 345.3,507.6 344.8,507.5 343.5,512.8 344.0,514.4 346.6,516.8 347.9,521.9 349.2,522.1 350.0,527.1 347.2,529.5 347.1,530.9 345.0,531.7 344.7,530.8 343.2,530.6 342.9,531.8 341.0,530.5 340.1,531.0 340.8,545.7 331.6,547.0 330.7,546.7 330.3,547.3 327.5,548.2 322.0,545.7 313.1,546.6 313.6,549.6 312.9,551.2 313.3,553.7 312.5,553.5 312.7,554.9 311.8,555.9 309.5,556.5 307.9,557.6 306.3,553.9 306.2,550.6 305.5,550.0 305.6,549.4 297.8,550.1 297.6,552.8 296.0,555.3 297.0,557.0 296.9,559.9 293.5,559.8 293.8,559.1 290.7,558.6 291.4,561.7 291.0,564.7 290.6,566.7Z"/>
+                    <path class="area-map__line" pathLength="1" d="M289.4,568.2 289.7,571.0 290.9,570.9 292.2,572.6 296.4,572.9 296.2,576.3 297.0,578.5 295.4,582.7 293.5,584.4 292.4,584.1 290.3,585.3 290.3,585.8 292.5,586.8 293.3,586.0 293.8,586.3 292.4,588.2 292.8,588.8 293.8,588.7 292.6,590.8 294.0,591.5 292.5,594.1 292.8,596.2 294.1,596.9 294.4,600.0 295.4,602.7 295.1,604.0 298.7,605.1 300.0,604.8 301.2,605.6 305.2,605.5 306.0,605.4 307.6,603.5 309.4,604.4 311.7,603.0 312.8,603.2 311.4,605.5 311.1,609.3 311.5,613.4 312.6,616.7 309.3,615.6 309.0,621.9 310.4,622.5 311.0,621.2 311.7,621.5 312.1,620.9 314.2,621.9 316.0,618.6 317.5,619.1 324.9,618.2 328.9,644.1 340.6,646.8 340.3,649.5 342.1,649.6 343.5,649.1 343.8,646.9 345.2,647.4 344.7,652.0 346.6,655.2 347.4,654.7 347.5,653.0 348.7,653.0 349.6,648.4 353.2,649.4 356.2,648.6 361.8,649.1 363.0,632.8 367.4,615.7 373.6,615.0 374.6,620.8 373.7,623.5 375.8,623.6 380.9,628.7 383.4,633.0 384.2,632.9 385.0,633.6 385.2,636.1 388.2,637.5 389.1,637.1 389.2,636.1 391.2,637.2 392.3,636.4 395.6,632.1 405.1,634.7 406.8,647.4 412.9,650.1 415.6,653.1 414.8,656.7 416.9,661.2 420.9,663.3 423.4,667.4 435.0,677.1 439.7,666.3 439.3,647.5 442.6,643.9 447.1,647.8 451.4,659.1 456.3,657.7 471.1,638.1 501.7,618.8 517.2,618.8 517.6,577.9 508.4,515.5 488.1,512.8 451.0,495.2 429.7,510.5 427.8,512.8 425.9,512.4 420.6,514.7 421.1,512.8 420.9,507.8 418.7,508.9 417.3,508.2 416.6,508.4 413.2,507.6 412.4,506.9 410.6,507.0 409.2,500.8 406.2,501.8 399.3,500.7 398.4,498.7 395.6,495.8 394.8,493.4 395.0,492.6 393.2,492.6 391.8,493.4 391.5,495.0 390.0,494.2 388.9,494.7 389.2,496.1 388.3,498.0 389.0,499.1 386.2,500.7 382.8,501.0 380.3,502.9 378.7,503.3 371.7,502.2 372.1,505.6 365.2,507.2 364.7,510.5 361.9,511.4 361.4,512.4 362.2,515.5 362.0,517.2 361.3,517.0 361.4,515.9 360.3,513.9 358.8,507.2 357.8,506.1 354.8,507.0 354.8,508.4 351.9,509.2 351.1,507.2 349.0,507.5 348.0,506.0 345.3,505.5 345.8,506.8 345.3,507.6 344.8,507.5 343.5,512.8 344.0,514.4 346.6,516.8 347.9,521.9 349.2,522.1 350.0,527.1 347.2,529.5 347.1,530.9 345.0,531.7 344.7,530.8 343.2,530.6 342.9,531.8 341.0,530.5 340.1,531.0 340.8,545.7 331.6,547.0 330.7,546.7 330.3,547.3 327.5,548.2 322.0,545.7 313.1,546.6 313.6,549.6 312.9,551.2 313.3,553.7 312.5,553.5 312.7,554.9 311.8,555.9 309.5,556.5 307.9,557.6 306.3,553.9 306.2,550.6 305.5,550.0 305.6,549.4 297.8,550.1 297.6,552.8 296.0,555.3 297.0,557.0 296.9,559.9 293.5,559.8 293.8,559.1 290.7,558.6 291.4,561.7 291.0,564.7 290.6,566.7Z"/>
+                  </g>
+                  <g class="area-map__region" data-area="faerder" data-name="Færder kommune" data-focus="330 615 167 300">
+                    <path class="area-map__fill" mask="url(#area-land)" d="M406.2,643.2 406.8,647.4 412.9,650.1 415.6,653.1 414.8,656.7 416.9,661.2 420.9,663.3 423.4,667.4 435.0,677.1 439.7,666.3 439.3,647.5 442.6,643.9 447.1,647.8 451.4,659.1 456.3,657.7 471.1,638.1 501.7,618.8 517.2,618.8 527.9,641.9 554.6,712.2 564.4,727.8 561.4,811.8 540.8,841.7 578.9,935.8 568.3,964.8 545.1,1064.1 519.3,1336.7 349.1,1322.2 360.7,1055.7 331.1,948.2 352.2,892.5 338.6,862.3 330.2,822.4 333.8,810.2 328.5,801.5 327.8,785.8 331.4,782.3 336.0,747.4 351.3,697.0 360.2,687.2 365.0,670.8 364.9,653.3 361.8,649.6 363.0,632.8 367.4,615.7 373.6,615.0 374.6,620.8 373.7,623.4 375.6,623.5 376.9,624.5 382.2,630.4 383.4,633.0 384.2,632.9 385.0,633.6 385.2,636.1 388.2,637.5 389.1,637.1 389.2,636.1 391.2,637.2 392.1,636.6 395.6,632.1 405.1,634.7Z"/>
+                    <path class="area-map__line" pathLength="1" d="M406.2,643.2 406.8,647.4 412.9,650.1 415.6,653.1 414.8,656.7 416.9,661.2 420.9,663.3 423.4,667.4 435.0,677.1 439.7,666.3 439.3,647.5 442.6,643.9 447.1,647.8 451.4,659.1 456.3,657.7 471.1,638.1 501.7,618.8 517.2,618.8 527.9,641.9 554.6,712.2 564.4,727.8 561.4,811.8 540.8,841.7 578.9,935.8 568.3,964.8 545.1,1064.1 519.3,1336.7 349.1,1322.2 360.7,1055.7 331.1,948.2 352.2,892.5 338.6,862.3 330.2,822.4 333.8,810.2 328.5,801.5 327.8,785.8 331.4,782.3 336.0,747.4 351.3,697.0 360.2,687.2 365.0,670.8 364.9,653.3 361.8,649.6 363.0,632.8 367.4,615.7 373.6,615.0 374.6,620.8 373.7,623.4 375.6,623.5 376.9,624.5 382.2,630.4 383.4,633.0 384.2,632.9 385.0,633.6 385.2,636.1 388.2,637.5 389.1,637.1 389.2,636.1 391.2,637.2 392.1,636.6 395.6,632.1 405.1,634.7Z"/>
+                  </g>
+                  <g class="area-map__base" transform="translate(237.6 161.8)">
+                    <circle class="area-map__base-pulse" r="7"/>
+                    <circle class="area-map__base-dot" r="5.5"/>
+                    <g class="area-map__base-label" transform="translate(12 -11)">
+                      <rect width="84" height="22" rx="11"/>
+                      <text x="42" y="15">Base i Sande</text>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <p class="area-map__badge" aria-live="polite">Hele området</p>
+            <figcaption class="area-map__credit">Kartgrunnlag: © Kartverket</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="curve curve--bottom" aria-hidden="true"></div>
+    </section>
 
-          <p class="area-cta">
-            Usikker på om vi dekker deg?
-            <a href="#kontakt">Send en melding</a>
-          </p>
+    <!-- Ofte stilte spørsmål -->
+    <section class="section section--faq" id="sporsmal">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <p class="section__eyebrow">Lurer du på noe?</p>
+          <h2 class="section__title">Ofte stilte spørsmål</h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Hvilke områder dekker dere?</summary>
+            <div class="faq__answer">
+              <p>Vi holder til i Sande og tar oppdrag i Holmestrand kommune (Sande, Holmestrand og Hof), Horten, Tønsberg (ikke Re) og Færder (Nøtterøy og Tjøme). <a href="#omrade">Se området på kartet</a>, eller <a href="#kontakt">send oss en melding</a> hvis du er usikker.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Tar dere oppdrag for privatpersoner?</summary>
+            <div class="faq__answer">
+              <p>Ja. Vi tar enkeltoppdrag for private – alt fra hagearbeid og snørydding til småreparasjoner – og faste avtaler for borettslag, sameier og næring.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Hvor raskt får jeg svar?</summary>
+            <div class="faq__answer">
+              <p>Vi svarer normalt innen 24 timer på hverdager. Haster det, ring oss på <a href="tel:+4791367532">913 67 532</a> (man–fre 08:00–16:00).</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Hva koster det?</summary>
+            <div class="faq__answer">
+              <p>Prisen avhenger av oppdraget. Beskriv kort hva du trenger hjelp med i skjemaet under, så får du et uforpliktende tilbud.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Hva inngår i en fast avtale?</summary>
+            <div class="faq__answer">
+              <p>Innholdet tilpasses eiendommen – typisk sesongarbeid og uteområder, snørydding om vinteren og løpende vedlikehold av fellesarealer. <a href="faste-avtaler.html">Se hva en fast avtale kan inneholde</a>.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Er dette samme firma som Geir Service AS?</summary>
+            <div class="faq__answer">
+              <p>Ja. Geir Service AS har skiftet navn til N&amp;M Vaktmesterservice AS – samme organisasjonsnummer og samme drift, nå med neste generasjon ved roret.</p>
+            </div>
+          </details>
         </div>
       </div>
       <div class="curve curve--bottom" aria-hidden="true"></div>
@@ -488,20 +679,36 @@
 
         <form class="contact__form" id="contact-form" action="https://formspree.io/f/mykdepdl" method="POST">
           <input type="hidden" name="_subject" value="Ny forespørsel fra nettsiden">
+          <input type="hidden" name="side" value="Forside">
+          <div class="form-hp" aria-hidden="true">
+            <label for="website">La dette feltet stå tomt</label>
+            <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
           <div class="form-group">
             <label for="name">Navn</label>
-            <input type="text" id="name" name="name" required placeholder="Ditt navn">
+            <input type="text" id="name" name="name" required placeholder="Ditt navn" autocomplete="name">
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone" required placeholder="Ditt telefonnummer">
+              <input type="tel" id="phone" name="phone" required placeholder="Ditt telefonnummer" autocomplete="tel" inputmode="tel">
             </div>
             <div class="form-group">
-              <label for="email">E-post</label>
-              <input type="email" id="email" name="email" placeholder="din@epost.no">
+              <label for="email">E-post <span class="form-optional">(valgfritt)</span></label>
+              <input type="email" id="email" name="email" placeholder="din@epost.no" autocomplete="email">
             </div>
           </div>
+          <fieldset class="form-group form-chips">
+            <legend>Hva gjelder det? <span class="form-optional">(velg gjerne flere)</span></legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="tjenester" value="Hagearbeid"><span>Hagearbeid</span></label>
+              <label class="chip"><input type="checkbox" name="tjenester" value="Snørydding"><span>Snørydding</span></label>
+              <label class="chip"><input type="checkbox" name="tjenester" value="Vedlikehold"><span>Vedlikehold</span></label>
+              <label class="chip"><input type="checkbox" name="tjenester" value="Småreparasjoner"><span>Småreparasjoner</span></label>
+              <label class="chip"><input type="checkbox" name="tjenester" value="Renhold ute"><span>Renhold ute</span></label>
+              <label class="chip"><input type="checkbox" name="tjenester" value="Fast avtale"><span>Fast avtale</span></label>
+            </div>
+          </fieldset>
           <div class="form-group">
             <label for="message">Hva trenger du hjelp med?</label>
             <textarea id="message" name="message" rows="5" required placeholder="Beskriv jobben kort – f.eks. gressklipping, snørydding, reparasjon..."></textarea>
@@ -524,6 +731,17 @@
 
   </main>
 
+  <!-- Fast knapperad på mobil -->
+  <div class="mobile-cta" data-track-area="mobilknapp" aria-hidden="true">
+    <a href="tel:+4791367532" class="mobile-cta__btn mobile-cta__btn--call" tabindex="-1">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      Ring oss
+    </a>
+    <a href="#kontakt" class="mobile-cta__btn mobile-cta__btn--quote" tabindex="-1">Be om tilbud</a>
+  </div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
@@ -544,6 +762,7 @@
         <a href="faste-avtaler.html">Faste avtaler</a>
         <a href="#bilder">Bilder</a>
         <a href="#om-oss">Om oss</a>
+        <a href="#sporsmal">Spørsmål</a>
         <a href="#kontakt">Kontakt</a>
         <a href="personvern.html">Personvern</a>
       </div>
@@ -555,6 +774,7 @@
     </div>
   </footer>
 
+  <script src="js/analytics.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
