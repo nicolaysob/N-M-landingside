@@ -293,7 +293,7 @@ document.querySelectorAll('.faq__item').forEach((item) => {
   item.addEventListener('toggle', () => {
     if (!item.open) return;
     const question = item.querySelector('summary')?.textContent.trim();
-    window.nmTrack?.('Spørsmål åpnet', { spørsmål: question || 'ukjent' });
+    window.nmTrack?.('Spørsmål åpnet', { sporsmal: question || 'ukjent' });
   });
 });
 
@@ -355,7 +355,7 @@ if (areaMap) {
       if (!activeRegion || isActive) redrawOutline(region);
     });
     zoomToArea(area);
-    window.nmTrack?.('Område valgt', { område: name });
+    window.nmTrack?.('Område valgt', { omrade: name });
   }
 
   areaPicks.forEach((btn) => {

@@ -2,20 +2,17 @@
    Besøksstatistikk og hendelser
    =============================================
 
-   Siden er klargjort for besøksstatistikk, men INGENTING sendes før
-   `provider` er satt under. Når siden kjøres lokalt (localhost) logges
-   hendelsene bare i nettleserkonsollen, slik at sporingen kan testes
-   uten å sende data noe sted.
+   Statistikk via Plausible (uten cookies, data lagres i EU). Skriptet
+   lastes bare på nmvaktmester.no – lokalt (localhost) logges hendelsene
+   kun i nettleserkonsollen, slik at sporingen kan testes uten å sende
+   data noe sted. Sett provider: null for å slå av all statistikk.
 
-   Aktivere Plausible (anbefalt – uten cookies, data lagres i EU):
-     1. Opprett konto på plausible.io og legg til domenet nmvaktmester.no
-     2. Sett provider: 'plausible' under (og eventuelt scriptSrc fra
-        Plausible-dashbordet hvis de gir deg en egen script-adresse)
-     3. Legg til hendelsene under som «Custom event goals» i Plausible
+   I Plausible: legg til hendelsene under som «Custom event goals», og
+   egenskapene (plassering, side, tjenester, bilde, oppdrag, omrade,
+   sporsmal, path) under «Custom properties» for å se detaljene.
 
-   Aktivere Umami (alternativ, også uten cookies):
-     1. Opprett nettsted i Umami og kopier «Website ID»
-     2. Sett provider: 'umami' og umamiWebsiteId under
+   Bytte til Umami (alternativ, også uten cookies):
+     sett provider: 'umami' og umamiWebsiteId under
 
    Hendelser som sendes:
      Ring-klikk           – klikk på telefonnummer (med plassering)
@@ -27,14 +24,15 @@
      Oppdrag valgt        – hvilket oppdrag som ble valgt i galleriet
      Spørsmål åpnet       – hvilket spørsmål i «Ofte stilte spørsmål»
      Område valgt         – hvilken kommune som ble valgt på kartet
-     404                  – noen havnet på en side som ikke finnes (med adresse)
+     404                  – noen havnet på en side som ikke finnes (path)
 */
 
 (() => {
   const ANALYSE = {
-    provider: null, // 'plausible' | 'umami' | null (av)
+    provider: 'plausible', // 'plausible' | 'umami' | null (av)
     domain: 'nmvaktmester.no',
-    scriptSrc: '', // tom = standardadresse for valgt leverandør
+    // Nettstedets eget skript fra Plausible (Site settings → Site installation)
+    scriptSrc: 'https://plausible.io/js/pa-bWyA5eG-woVUAWncbEGNv.js',
     umamiWebsiteId: '',
   };
 
@@ -45,14 +43,19 @@
     if (!ANALYSE.provider || !isProduction) return;
 
     const script = document.createElement('script');
-    script.defer = true;
+    script.async = true;
 
     if (ANALYSE.provider === 'plausible') {
+      if (!ANALYSE.scriptSrc) return;
+      // Samme kø-oppsett som Plausibles egen kodesnutt: hendelser før skriptet er lastet tas vare på
       window.plausible = window.plausible || function () {
         (window.plausible.q = window.plausible.q || []).push(arguments);
       };
-      script.src = ANALYSE.scriptSrc || 'https://plausible.io/js/script.js';
-      script.dataset.domain = ANALYSE.domain;
+      window.plausible.init = window.plausible.init || function (options) {
+        window.plausible.o = options || {};
+      };
+      window.plausible.init();
+      script.src = ANALYSE.scriptSrc;
     } else if (ANALYSE.provider === 'umami') {
       if (!ANALYSE.umamiWebsiteId) return;
       script.src = ANALYSE.scriptSrc || 'https://cloud.umami.is/script.js';
@@ -110,6 +113,6 @@
 
   // Døde lenker: hvilke adresser folk prøver som ikke finnes
   if (document.body.dataset.side === '404') {
-    track('404', { sti: window.location.pathname });
+    track('404', { path: window.location.pathname });
   }
 })();
