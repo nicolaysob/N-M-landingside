@@ -1366,6 +1366,39 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.about__team {
+  position: relative;
+  margin: 0.25rem 0 1.5rem;
+  border-radius: 22px;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  background: var(--gray-100);
+  box-shadow: 0 18px 44px rgba(30, 74, 44, 0.16);
+}
+
+.about__team picture {
+  display: contents;
+}
+
+.about__team img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__team figcaption {
+  position: absolute;
+  left: 0.9rem;
+  bottom: 0.9rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
 .about__content p {
   color: var(--gray-700);
   margin-bottom: 1rem;
