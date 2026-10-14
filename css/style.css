@@ -1157,11 +1157,11 @@ a:hover {
 
 .job {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
+  grid-template-columns: 56px minmax(0, 1fr);
   gap: 1rem;
   align-items: center;
   width: 100%;
-  padding: 0.65rem 1rem 0.65rem 0.65rem;
+  padding: 0.55rem 1rem 0.55rem 0.55rem;
   text-align: left;
   font: inherit;
   color: inherit;
@@ -1185,8 +1185,8 @@ a:hover {
 }
 
 .job__thumb {
-  width: 64px;
-  height: 85px;
+  width: 56px;
+  height: 75px;
   object-fit: cover;
   border-radius: 12px;
   background: var(--gray-100);
@@ -1224,6 +1224,13 @@ a:hover {
 
 .job.is-active .job__text {
   display: block;
+}
+
+/* PC: én linje på de jobbene som ikke er valgt, så kolonnen ikke blir høyere enn bildet */
+@media (min-width: 901px) {
+  .job:not(.is-active) .job__text {
+    -webkit-line-clamp: 1;
+  }
 }
 
 .showcase__photos {
