@@ -298,7 +298,7 @@ document.querySelectorAll('.faq__item').forEach((item) => {
 });
 
 // Kart over området: velg kommune for å fremheve og zoome inn på omrisset
-const areaMap = document.querySelector('.area-map');
+const areaMap = document.querySelector('.area-map:not(.area-map--static)');
 
 if (areaMap) {
   const areaPicks = document.querySelectorAll('.area-pick');
